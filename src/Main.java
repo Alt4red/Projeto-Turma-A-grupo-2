@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void count() throws InterruptedException {
+        //FUNÇÃO PARA INDENTIDADE VISUAL E TIMEOUT
         System.out.println("...");
         TimeUnit.SECONDS.sleep(1L);
         System.out.println("...");
@@ -13,6 +14,7 @@ public class Main {
     }
 
     static int entrada() {
+        //FUNÇÃO DESENVOLVIDA PARA ENTRADA DE UM INT
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite uma opção:");
@@ -22,6 +24,7 @@ public class Main {
     }
 
     static String entradaString() {
+        //FUNÇÃO DESENVOLVIDA PARA ENTRADA DE UMA STRING
         Scanner sc = new Scanner(System.in);
 
         System.out.println("");
@@ -38,11 +41,10 @@ public class Main {
 
     }
     public static double faseUm(String a) throws InterruptedException {
-        double reputação = 0;
-        int contadorR = 0;
+        double reputação = 0; //VARIAVEL PARA ARMAZENAR A REPUTAÇÃO QUE FARÁ O USUARIO PASSAR DA PRIMEIRA FASE
+        int contadorR = 0; //CONTADOR
 
-
-
+            //DIALOGO INICIAL DA ENTREVISTA
         System.out.println("Olá, meu nome é Fabio Akita e eu sou CEO da Codeminer42, Hoje eu irei fazer sua entrevista");
 
         System.out.println("*Aperta a sua mão.*");
@@ -73,7 +75,7 @@ public class Main {
         count();
 
 
-
+        //PERGUNTAS USANDO VETORES DA PRIMEIRA FASE - 7 DESAFIOS
         System.out.println("Pergunta 1(Lógica):\n");
         System.out.println("Um economista deu a seguinte declaração em uma entrevista: “Se os juros bancários são altos, então a inflação é baixa”. Assinale a alternativa que contém uma proposição logicamente equivalente à do economista:");
 
@@ -89,6 +91,7 @@ public class Main {
         alternativas[2] = "C- Se a inflação é alta, então os juros bancários são altos.\"";
         alternativas[3] = "D- Os juros bancários são baixos e a inflação é baixa.\"";
 
+        //FOR PARA PERCORRER UM VETOR
         for (int i = 0; i < alternativas.length ; i++) {
             System.out.println(alternativas[i]);
 
@@ -96,7 +99,7 @@ public class Main {
 
 
         String respostaF1 = entradaString();
-
+        //CONDICIONAL PARA VERIFICAR SE AS RESPOSTAS ESTÃO CERTAS
         if (respostaF1.equals("A") || respostaF1.equals("a")){
             contadorR++;
 
@@ -105,12 +108,25 @@ public class Main {
         System.out.println("Pergunta 2(Lógica):\n");
         System.out.println("Sabe-se que as afirmativas \"Se a bola é azul, então o carro é branco\" e \"Ary  é inteligente ou Marcos é preguiçoso\" são falsas. Logo,");
         System.out.println("Escolha uma opção: ");
-        System.out.println("A- a bola é azul, o carro não é branco, Ary é inteligente e Marcos não é preguiçoso. ");
-        System.out.println("B- a bola é azul, o carro não é branco, Ary não é inteligente e Marcos não é preguiçoso.");
-        System.out.println("C- a bola não é azul, o carro não é branco, Ary não é inteligente e Marcos não é preguiçoso.");
-        System.out.println("D- a bola é azul, o carro é branco, Ary é inteligente e Marcos é preguiçoso.");
 
-         respostaF1 = entradaString();
+
+        String []alternativas2 = new String[4];
+
+        alternativas[0] = "A- a bola é azul, o carro não é branco, Ary é inteligente e Marcos não é preguiçoso. ";
+        alternativas[1] = "B- a bola é azul, o carro não é branco, Ary não é inteligente e Marcos não é preguiçoso.";
+        alternativas[2] = "C- a bola não é azul, o carro não é branco, Ary não é inteligente e Marcos não é preguiçoso.";
+        alternativas[3] = "D- a bola é azul, o carro é branco, Ary é inteligente e Marcos é preguiçoso.";
+
+        for (int i = 0; i < alternativas2.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
+
+
+
+
+
+        respostaF1 = entradaString();
 
         if (respostaF1.equals("b") || respostaF1.equals("B")){
             contadorR++;
@@ -120,10 +136,20 @@ public class Main {
         System.out.println("Pergunta 3(Lógica):\n");
         System.out.println("Considerando falsa a afirmação “Se Carlos é gerente, então Ana é diretora\", a afirmação necessariamente verdadeira é:");
         System.out.println("Escolha uma opção: ");
-        System.out.println("A- Carlos é gerente. ");
-        System.out.println("B- Carlos não é gerente ou Ana é diretora.");
-        System.out.println("C- Ana é diretora.");
-        System.out.println("D- Carlos não é gerente e Ana não é diretora,");
+
+
+        String []alternativas3 = new String[4];
+
+        alternativas[0] = "A- Carlos é gerente. ";
+        alternativas[1] = "B- Carlos não é gerente ou Ana é diretora.";
+        alternativas[2] = "C- Ana é diretora.";
+        alternativas[3] = "D- Carlos não é gerente e Ana não é diretora,";
+
+        for (int i = 0; i < alternativas3.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
+
 
         respostaF1 = entradaString();
 
@@ -136,8 +162,19 @@ public class Main {
         System.out.println("Pergunta 4(SQL):\n");
         System.out.println("Quanto aos conceitos relativos à arquitetura de dados, julgue o item a seguir.");
         System.out.println("A principal diferença entre bancos de dados relacionais e bancos de dados NoSQL está na questão da segurança dos dados e das transações; os bancos de dados NoSql são imunes a ataques de injeção SQL.");
-        System.out.println("A- CERTO  ");
-        System.out.println("B- ERRADO");
+
+
+        String []alternativas4 = new String[2];
+
+        alternativas[0] ="A- CERTO  ";
+        alternativas[1] ="B- ERRADO";
+
+
+        for (int i = 0; i < alternativas4.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
+
 
         respostaF1 = entradaString();
 
@@ -152,12 +189,18 @@ public class Main {
         System.out.println("II. Uma expressão 0.0 / 0.0 gera uma exceção em tempo de execução.");
         System.out.println("III. Valores de ponto flutuante, como 0.5 e 4.6, são sempre considerados como do tipo double.");
 
-        System.out.println("A- Todas estão corretas.");
-        System.out.println("B- Todas estão incorretas.");
-        System.out.println("C- Apenas I e II estão corretas.");
-        System.out.println("D- Apenas I e III estão corretas.");
-        System.out.println("E- Apenas II e III estão corretas.");
 
+        String []alternativas5 = new String[4];
+
+        alternativas[0] = "A- Todas estão corretas.";
+        alternativas[1] = "B- Todas estão incorretas.";
+        alternativas[2] = "C- Apenas I e II estão corretas.";
+        alternativas[3] = "D- Apenas I e III estão corretas.";
+
+        for (int i = 0; i < alternativas5.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
 
         respostaF1 = entradaString();
 
@@ -170,11 +213,19 @@ public class Main {
         System.out.println("Pergunta 6(JAVA):\n");
         System.out.println("Analise as afirmações abaixo sobre valores de ponto flutuante em Java e assinale a alternativa correta.");
 
-        System.out.println("A- +, ==, <> e %.");
-        System.out.println("B- -, :=, != e /.");
-        System.out.println("C-  , <=, ** e >.");
-        System.out.println("D- /, !=, >= e. *");
-        System.out.println("E- %, >=, ~= e +.");
+
+
+        String []alternativas6 = new String[4];
+
+        alternativas[0] = "A- +, ==, <> e %.";
+        alternativas[1] = "B- -, :=, != e /.";
+        alternativas[2] = "C-  , <=, ** e >.";
+        alternativas[3] = "D- /, !=, >= e. *";
+
+        for (int i = 0; i < alternativas6.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
 
 
         respostaF1 = entradaString();
@@ -189,12 +240,19 @@ public class Main {
         System.out.println("public class Codigo {        public static void main(String[] args) {                   String a = “Educar”;                   String b = “Ação”;                   b = geraStr(a, b);                   System.out.println(b);        }        public static String geraStr(String a, String b) {                   String s = “”;                  //s = a.concat(b.substring(1, 3));                  for (int i = 0; i <= a.length()-1; i++) {\n" +
                 "                         char c = a.charAt(i);                          s += Character.toString(c);                    }                  return s.concat(b.substring(1, 4));          } }\n");
 
-        System.out.println("A saída produzida pela execução desse código é:");
-        System.out.println("A- Educação");
-        System.out.println("B- Educarção");
-        System.out.println("C- AçãoEducar");
-        System.out.println("D- EducarAção");
-        System.out.println("E- EducarçãEducarção");
+
+        String []alternativas7 = new String[4];
+
+        alternativas[0] = "A- Educação";
+        alternativas[1] = "B- Educarção";
+        alternativas[2] = "C- AçãoEducar";
+        alternativas[3] = "D- EducarAção";
+
+        for (int i = 0; i < alternativas7.length ; i++) {
+            System.out.println(alternativas[i]);
+
+        }
+
 
 
         respostaF1 = entradaString();
@@ -207,9 +265,9 @@ public class Main {
         System.out.println("CEO: Agora que terminou a entrevista peço que aguarde vamos mandar um email te comunicando se você passou ou não, se tiver passado, vamos te passar as informações necessárias.\n");
         System.out.println("Quantidade de acertos " + contadorR);
 
-
+        //FORMULA PARA PEGAR % DE ACERTOS
         double reputaçãoP = (contadorR*100) / 7;
-
+        //CHAMANDO A FUNÇÃO DA SEGUNDA FASE SE  A REPUTAÇÃO FOR MAIOR QUE 60%
         if (reputaçãoP >= 60.0){
             faseDois(a);
         } else {
@@ -908,6 +966,163 @@ public class Main {
         System.out.printf("A Kaka é a minha secretária e uma das pessoas em quem eu mais confio aqui na empresa, ela ira continuar\nte orientando e ajudando sempre que necessário, porém agora ela também será a sua secretaria particular\ne te acompanhará em tudo o que for necessário. Vamos entrar.\n");
         count();
         System.out.printf("\n*Vocês entram na sala e de cara vc é recepcionado(a) pela vista maravilhosa da cidade já que a parede lateral da sala é feita inteiramente\nde vidro do chão ao teto, a sala é composta por diferentes tons de cinza e branco, a sua frente há uma enorme mesa de vidro e ao seu lado\ndireito um sofá branco com uma mesa de centro, há também uma porta na parede direita da sala e uma mesa retangular atrás do sofá,\nprovavelmente uma mesa para reuniões, vcs caminhão mais para dentro da sala e vc avista um frigobar no canto direito da sala perto do\nsofá onde há também um balcão com uma maquina de café e alguns utensílios, a sala é enorme e ocupa praticamente todo o andar.*\n");
+
+        System.out.printf("\nCEO Fabio Akita: Agora é com você %s, vou deixar você ir se acostumando com a sala e com sua nova função.\n", a);
+        count();
+
+        System.out.printf("\n*Alguns minutos depois.*\n");
+        System.out.printf("\nKaka: %s aqui esta você. Sua agenda para essa tarde está cheia, você tem duas reuniões importantes e uma tarefa pra completar, falta menos de 10m para a sua primeira reunião, vc está pronta?\n", a);
+
+        // 3 loop de resposta para o caso do jogador responder com uma opção inválida.
+        do{
+
+            System.out.printf("\n*Escolha uma das respostas*");
+            System.out.printf("\n1.	Sim.\n");
+            System.out.printf("\n2.	Não.\n");
+            int r3 = entrada();
+
+            switch(r3){
+                case 1:
+                    System.out.printf("Kaka: Bom, a sala de reunião já está pronta vamos indo.\n");
+                    count();
+                    x++;
+                    break;
+                case 2:
+                    System.out.printf("Kaka: Então se prepare porque a sala já está pronta e alguns acionistas já começaram a chegar.\n");
+                    count();
+                    x++;
+                    break;
+                default:
+                    x=0;
+                    System.out.printf("Opção inválida.*\n");
+            }
+
+        }while(x <= 0);
+
+        System.out.printf("*Vocês foram para a sala de reuniões e a caminho de lá você foi informado que na ultima reunião havia sido pedido um novo projeto principal\nque fosse desenvolvido utilizando a Administração Clássica como base,  chegando na sala foi encaminhado para o acento da cabeceira da mesa cumprimentou os\nque se encontravam na sala e esperou pelos próximos, assim que eles chegaram você se apresentou para eles e em seguida um deles\ncomeçou a apresentar o novo projeto para ser decidido qual seria a nova campanha principal da empresa, todos assistiram atentamente\nas apresentações e no final de tudo todos se voltaram para você esperando a sua decisão.*\n");
+
+
+        do{
+            contadorR++;
+            System.out.printf("\n*Escolha entre o 1 e o 2 projeto, o que usa como base de criação a Administração clássica.*\n");
+            System.out.printf("\n*Projeto A- A primeira proposta apresentada foi um novo sistema de acesso que armazena e abre arquivos com subniveis de acesso de acordo com\na sua posição, então quanto mais alto o cargo mais amplo o seu acesso aos arquivos do programa e o nível\nmais baixo teria acesso somente aos seus próprios arquivos importados. Esse projeto seria um projeto eficiente e produzido com\no foco na qualidade do produto com metas a serem cumpridas que quando alcançadas por seus respectivos funcionários esses ganhariam recompensas e incentivos*\n");
+
+            System.out.printf("\n*Projeto B - A segunda proposta apresentada foi um novo sistema para armazenar dados de cadastros de clientes uma vez que o cliente fosse a loja e fizesse o\ncadastro seus dados ficariam guardados e seriam puxados somente com o RG ou algum dado pessoal fornecido pelo cliente o grande diferencial\ndesse sistema seria que o cliente teria acesso a um app da loja para poder estar atualizando os seus dados cadastrais sempre que necessário.\nEsse projeto seria um projeto eficaz produzido com o foco na quantidade do produto e de sua entrega com prazo para ser\ncumprido em cada etapa de desenvolvimento, foi um projeto desenvolvido com o tempo de serviço calculado e estimado para cada trabalhador.*\n");
+            count();
+
+            System.out.printf("\n1 - Projeto A\n2 - Projeto B.\n");
+            int r4 = entrada();
+
+            switch(r4){
+                case 1:
+                    reputação++;
+                    x++;
+                    break;
+                case 2:
+                    reputação = 0;
+                    x++;
+                    break;
+                default:
+                    x=0;
+                    System.out.printf("Opção inválida.*\n");
+            }
+
+        }while(x <= 0);
+
+        System.out.printf("\n*Ao termino da reunião você se manteve no seu lugar porque você ainda participaria de mais uma reunião em menos de 15m.*\n");
+        System.out.printf("\n*O cliente chegou na sala de reunião e você se levantou e o cumprimento em seguidas vocês se sentaram, trocaram\nalgumas trivialidades e começaram  falar de negócios, ele te passou o que precisava para a sua empresa*\n");
+        System.out.printf("\nCliente: Preciso de um sistema de segurança para todos os meus projetos. Vou precisar de um sistema de login com senha encriptada para todos os sistemas que usamos na\nminha empresa e por serem sistemas próprios quero que o sistema de login seja criado com base no nosso sistema e por isso pode acabar sendo um pouco\nmais complicado, mas estou disposto a pagar o necessário, porém preciso do projeto o quanto antes, coloque os melhores que você\ntiver para trabalhar nesse projeto e me entregue assim que possível, sei que vocês não iram me decepcionar.\n");
+        count();
+
+        do{
+            contadorR++;
+            System.out.printf("\n*Escolha a melhor maneira de prosseguir com o projeto do seu cliente de acordo com o que ele pediu.*\n");
+            System.out.printf("\n*Opção A - Colocar a equipe para trabalhar com prazos definidos para o processo de criação e desenvolvimento,\nbuscando assim um trabalho mais eficiente e com resultados mais rápidos o possível.* \n");
+
+            System.out.printf("\n*Opção B - Colocar a equipe para trabalhar sem determinar os prazos e duração de trabalho em cada etapa,\nbuscando um trabalho mais eficaz com recompensas pelo trabalho feito e pelo esforço da equipe.*\n");
+            count();
+            System.out.printf("\n1 - Opção A.\n2 - Opção B.\n");
+            int r5 = entrada();
+
+            if(r5 == 1){
+                x++;
+                reputação++;
+            } else if (r5 == 2){
+                x++;
+                reputação = reputação;
+            } else{
+                System.out.printf("\nOpção Inválida.\n");
+                x = 0;
+            }
+
+        } while(x <= 0);
+
+        System.out.printf("\n*Assim que você saiu da sala de reunião você se encaminhou para a sua sala já exausto(a) e\no dia mau havia começado, antes de almoçar você ainda tinha um assunto para resolver e\nassim que chegou na sua sala você encontrou o CEO Fabio Akita a sua espera.*\n");
+        System.out.printf("\nCEO Fabio Akita: Soube que suas duas primeira reuniões foram um sucesso, agora falta muito pouco para\nvocê assumir o meu lugar por completo e para que isso aconteça eu só preciso que você me responda mais\numa pergunta, e essa pergunta irá determinar se você é a pessoa certa para ocupar o cargo de CEO dessa empresa.\n");
+        System.out.printf("\nCEO Fabio Akita: Analisando a estrutura da empresa e por já ter passado por vários cargos diferentes e\nter lidado com distintos tipos de situações aqui dentro acredito que você saberá me responder.\n");
+        count();
+
+        System.out.printf("\n*Escolha a alternativa correta para a pergunta feita pelo CEO Fabio Akita, você tem apenas uma tentativa.*\n");
+        System.out.printf("\n*As teorias da administração desenvolvidas por estudiosos americanos tiveram um papel decisivo na economia\nmundial, estabelecendo métodos mais sofisticados para a produção e extinguindo práticas rudimentares baseadas\nem meras tradições, além é claro de automatizar as empresas e os seus processos tornando-as cada vez mais\nqualificadas e preparadas para proporcionar um ótimo ambiente de trabalho para os seus funcionários visando assim\na longo prazo um bom desempenho profissional.*\n");
+
+        do{
+            contadorR++;
+
+            System.out.printf("\nCEO Fabio Akita: Qual método de Administração usamos atualmente na empresa e porque?\n");
+            count();
+
+            System.out.printf("\nI. Administração clássica - que se caracteriza pela ênfase na estrutura da organização, na busca pela eficiência\nhá análise das tarefas de cada indivíduo cedeu lugar a uma visão global e universal da organização, a\nqual partia da estruturação, organização como um todo e chegava, finalmente, ao indivíduo.");
+            System.out.printf("\nII. A teoria da burocracia - Incentivava a impessoalidade nas relações e a padronização dos procedimentos.");
+            System.out.printf("\nIII. Administração cientifica - A teoria da administração científica previa um modelo administrativo com aspectos\nmais orgânicos, valorizando e incentivando a autonomia decisória de cada colaborador com o\nobjetivo de aumentar a produção dentro das organizações e aprimorar a eficiência dos trabalhadores.");
+            System.out.printf("\nIV. A teoria comportamental - Baseava seus métodos no estudo de tempos e movimentos de cada atividade.\n");
+
+            System.out.printf("\n*Está correto o que se afirma em:*\n");
+
+            System.out.printf("1 - I, Apenas.\n");
+            System.out.printf("2 - Todas.\n");
+            System.out.printf("3 - IV, Apenas.\n");
+            System.out.printf("4 - I e III, Apenas.\n");
+            int r6 = entrada();
+
+            //Vou guardar as respostas em um array
+            int [] vetor = new int [4];
+            vetor [0]= 1;
+            vetor [1]= 2;
+            vetor [2]= 3;
+            vetor [3]= 4;
+
+            if ((r6 != 1) & (r6 != 2) & (r6 != 3) & (r6 != 4)){
+                System.out.printf("Opção Inválida!");
+                x=0;
+            }
+
+            for (int i =0; i<vetor.length; i++){
+                if(vetor[i] == r6){
+                    if(r6 == 1){
+                        reputação = reputação;
+                    }
+                    if(r6 == 2){
+                        reputação = reputação;
+                    }
+                    if(r6 == 3){
+                        reputação = reputação;
+                    }
+                    if(r6 == 4){
+                        reputação++;
+                    }
+                }
+            }
+
+        }while(x <= 0);
+
+        double resultado = (reputação*100)/(double) contadorR;
+        if (resultado == 100){
+            System.out.printf("\nCEO Fabio Akita: Parabéns %s! Você acertou a pergunta e por isso agora você se tronou oficialmente o novo CEO da CODMINE!\nFim de jogo!", a);
+        }
+        else {
+            System.out.printf("Sinto muito, você errou e terá que começar novamente!\n Game Over!");
+        }
+
     }
     public static void menu() {
 
@@ -966,9 +1181,16 @@ public class Main {
 
     }
 
+    public  static void regras(){
+        System.out.println("O jogo ira te dar alternativas para serem respondidas, conforme os projetos que serão estregues ao jogador. Nessas alternativas você terá adm clássica e cientifica entre outras matérias que será parte do projeto.\n" +
+                "Cada alternativa tem uma porcentagem de acerto, se aquela situação, a opção escolhida for adequada para aquele momento, você acumula pontos. Os pontos serão contados em até 70% para poder passar de fase, caso não chegue nesses 70% você não avança para fase seguinte. \n" +
+                "Com base na historia o jogador vai saber qual alternativa escolher.\n" +
+                "Não tem muito segredo, Bora para o jogo!!!");
+    }
+
 
     public static void equipe() {
-
+        //FUNÇÃO DESCREVENDO OS MEMBROS QUE DESENVOLVERAM ESSSE RPG
         System.out.printf("José Guilherme Cardoso de abreu");
         System.out.println("Kaylaine Lima Silva");
         System.out.println("Beatriz Alves da Silva");
@@ -1014,6 +1236,7 @@ public class Main {
                     return;
                 case 2:
                     System.out.println("Regras do jogo");
+                    regras();
                     break;
                 case 3:
                     equipe();
