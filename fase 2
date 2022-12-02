@@ -1,0 +1,252 @@
+ public static void faseDois(String a) throws InterruptedException{
+
+        int contadorR = 0;
+        count();
+        System.out.println("1 dia depois... \n");
+
+        System.out.println("Codeminer42- Email  “ Prezado “N”(personagem escolhido).\n" +
+                "Um dos momentos mais emocionantes e que todo RH gostaria de comunicar, é escolha e aprovação de um profissional (desenvolvedor júnior) para somar a nossa equipe. Então, queremos lhe dizer que você foi aprovado! Parabéns!!!\n" +
+                "Entraremos em contato em breve para lhe fazer a carta oferta e para informar demais informações sobre como será o processo de contratação.\n" +
+                "Qualquer dúvida, por favor, nos contate por e-mail.\n" +
+                "Cordialmente,\n" +
+                "Kaylaine”. \n");
+
+
+        System.out.println("Kaylayne: Hoje é o seu primeiro dia como funcionário das empresas A Codeminer42, vamos te auxiliar nessa nova jornada e adaptação a nosso jeito de trabalho.\n ");
+        System.out.println("Você irá usar um cartão de acesso para poder entrar na empresa e começar a trabalhar, precisa fazer o cadastro com o seu nome e uma senha de acesso no saguão, se estiver com algum problema é só informar a recepcionista que ela o ajudara. Alguma duvida?");
+
+
+        System.out.println(a+ ":Por enquanto nenhuma .");
+
+        System.out.println("Kaylayne: Você vai trabalhar do 12ºandar sala 23 junto com mais três funcionários, irei apresentá-los a você mais tarde. Logo ao entrar em seu andar tem uma sala de descanso, ao lado direito onde poderá tomar café e almoçar. Já te informarão sobre os horários?.”");
+
+        System.out.println(a+ ":Me enviaram por Email, todas as informações.");
+
+        System.out.println("Sua sala será esta, ao seu dispor tem o computador mesa com gavetas, canetas, papel etc. todos nossos funcionários que terão o que precisar para realizar um trabalho bem-feito.\n");
+        System.out.println("Essa a sua direita é a patrícia, e a sua esquerda a jake, você irá trabalhar com elas nesse setor, e vão te ajudar caso precise. Amanhã vamos começar um novo projeto, hoje será só adaptação. \n");
+
+        System.out.println("Bom já mostrei tudo, elas irão te auxiliar no restante, vejo você amanhã.");
+
+        System.out.println("Jake – “Prazer n eu sou jake, também sou meio nova então não tenho como te ajudar em muita coisa”.");
+
+        System.out.println("Patrícia - “Não se preocupe!! eu mesma te mostro tudo por aqui, e como funciona o dia a dia. O novo projeto vai começar amanhã, vou te mostrar um pouco sobre os projetos antigos para você ter uma noção de como fazer. E depois vamos dar uma conhecida no prédio para você conhecer os lugares.”\n");
+
+        System.out.println("Patrícia – “Uma pergunta você já fez o cadastro no saguão, certo?”\n");
+
+        System.out.println(a+ ":sim, nome e senha");
+
+        System.out.println("Patrícia – “Pois então, esse acesso também serve para logar. no computador, se quiser pode testar agora, e já configurar ele do seu jeito.”");
+
+        System.out.println(a+ "“Beleza, já irei fazer isso”.");
+
+        System.out.println("Computador – “Carregando...”\n" +
+                "Computador – “ *-* LOGIN *-* e *-* SENHA*-*”.\n");
+
+        System.out.println(a+ ":“Boa agora só baixar os programas, essa empresa parece exigente, então tenho que dar o melhor de mim, para poder subir de cargo.”");
+
+        System.out.println("Patrícia – “Agora que conseguiu configurar, bora conhecer esse lugar, aqui tem pessoas que vão te ajudar e outras que irão te atrapalhar, mas é só ficar esperto e cuidar do que é seu. No primeiro 1º e no 25º andar tem áreas de lazer onde você pode descansar e levar o escritório até lá hehe.”");
+
+        System.out.println(a+ "“E nesse espaço de lazer tem café? ");
+        System.out.println("Patrícia -“Tem sim, uma máquina da Nespresso”\n");
+
+        System.out.println(a+ "\n" +
+                "N – “Que maravilha, eu não funciono sem café “\n");
+
+
+        System.out.println("Patrícia  -“Não tem muito o que mostra aqui, todos os andares são a mesma coisa, mas tem a garagem se tiver carro ou moto pode estacionar, tem o particular e o livre”\n");
+
+        System.out.println(a+ "“Então é isso, acabou nosso tour?”\n");
+
+        System.out.println("Patrícia – “Sim!!”");
+
+        System.out.println("Patrícia – “Agora vou te ensinar a como fazer os projetos.”");
+
+        System.out.println("Patrícia – bem, a gente tem dois projetos em andamento, são dois um para desenvolver uma calculadora.");
+
+        System.out.println(a+ " – Interessante, como está o processo?\n");
+
+        System.out.println("Entendo, e sobre o que é?");
+
+        System.out.println("Patrícia – o primeiro e sobre cálculos e o segundo a pagina de login de um site .\n");
+
+        System.out.println(a+ "Beleza, e a nossa equipe? Como vai ser o processo de desenvolvimento?\n");
+
+        System.out.println("Patrícia - Bem, como somos poucos, dividimos as pesquisas e dps vamos juntar e desenvolver os ADs.\n");
+
+        System.out.println(a + "e qual o nosso prazo?\n");
+
+        System.out.println("Patrícia- ainda temos 15 dias para a entrega.\n");
+
+        System.out.println(a+ "Temos pouco tempo então, vamos começar?\n");
+
+        System.out.println("Patrícia- vamos sim, a Kaka vai te mostrar oq fazer, vou chamar ela.\n");
+
+        System.out.println(a+ "claro, a patrícia já me apresentou os projetos, quero saber por onde começar?\n");
+
+        System.out.println("KAKA – então, vou te colocar direto do desenvolvimento dos cauculos, vc vai receber a pesquisa feita pela patrícia e ajudar ela a desenvolver os resto do projeto, proporcionando um pouco do seu conhecimento.\n");
+
+        System.out.println("KAKA – chegamos, patrícia jake e N vão ficar responsáveis pela Ads do site, se organizem e entreguem no prazo.\n");
+
+        System.out.println("Patrícia - ta bom kaka.\n");
+
+        System.out.println("Patrícia -então N, fiz minha pesquisa baseada no algoritmo da calculadora, com algumas ferramentas dela, poderíamos fazer aparecer o AD para pessoas q já estão precisando de ajuda e tbm contratar alguns influenciadores para divulgar nosso trabalho, oq vc acha?\n");
+
+        System.out.println(a+ "Achei uma boa ideia, faz sentido. ");
+
+        System.out.println(" Public static void main (string [] args){\n" +
+                "Double a, b;\n" +
+                "String operação;\n" +
+                "Char operação;\n" +
+                "Scanner entrada = new Scanner(system.in);\n" +
+                "System.out.println(“<A> adição”);\n" +
+                "System.out.println(“<S>  subtração”);\n" +
+                "System.out.println(“<M>  multiplicação”);\n" +
+                "System.out.println(“<D> Divisão”);\n" +
+                "System.out.println(“escolha a opção desejada”);\n" +
+                "operaçãoStr = entrada.next();\n" +
+                "operação = operaçãoStr.charAt(0);\n" +
+                "System.out.println(“1 operação”);\n" +
+                "A = entrada.nextDouble();\n" +
+                "System.out.println(“2 operação”);\n" +
+                "B = entrada.nextDouble();\n" +
+                "If(operação == ‘a’ || operação == ‘A’) {\n" +
+                "System.out.println(“soma: ” + (a+b));\n" +
+                "Else if (operação == ‘’s’ || operação == ‘S’) {\n" +
+                "System.out.println(“diferença: ” + (a-b ));\n" +
+                "Else if (operação == ‘m’ || operação == ‘M’) {\n" +
+                "System.out.println(“Produto: “ + (a*b));\n" +
+                "Else if (operação == ‘d’ || operação == ‘D’) {\n" +
+                "System.out.println(“quoeficiente: “ + (a/b))\n" +
+                "\n" +
+                "Else {\n" +
+                "System.out.println(“operação:” + operação + não é valida\n");
+
+        System.out.println("A -Usando double a b; string operaçao; char operação; informe as alternativas e peça para escolher uma das opçoes e informe os valores que serão calculados, em seguida if e if/else para mostrar o resultado da operação escolhida e else se for invalida.");
+
+        System.out.println("B -Usando double e char,  em seguida system.out.println para informar as opções, if/else seria para pegar os valores informados e mostrar o resultado");
+
+       String respostaF2 = entradaString();
+
+        if (respostaF2.equals("a") || respostaF2.equals("A")){
+            contadorR++;
+
+        }
+
+        System.out.println("Patrícia – achei interessante vamos ver se no final dará certo.\n" +
+                "\n" +
+                "\n" +
+                "Desenvolvimento – usando duas variaveis, menu, swith case.\n" +
+                "Selecionar local – site \n" +
+                "Entregar projeto para kaka.\n");
+
+
+        System.out.println("KAKA – humm, parabéns gente, gostei muito dessa calculadora bem pratica, vamos enviar para o cliente para a aprovação dele, mas está muito bom, certeza q ele vai aprovar.");
+
+        System.out.println("Patricia – okey, vamos desenvolvendo o outro projeto então, assim que terminarmos te entregamos ");
+
+        System.out.println("KAKA – Combinado!");
+
+        System.out.println(a+ ":então bora começar.");
+
+        System.out.println("Patricia – calma precisamos tirar um tempinho vamos fazer uma pausa, depois de amanha começamos o próximo.");
+
+        System.out.println(a+ "aah tabom, mas o quanto antes terminarmos melhor.");
+
+        System.out.println("2 dias depois ....");
+
+        System.out.println("Oi pati bom dia!!, vamos tomar um cafe e discutir sobre o trabalho lá,");
+
+        System.out.println("Patrícia -  bom dia, vamos então.");
+
+        System.out.println("Chegando no café...");
+        System.out.println(a+ "Quanto seria o capuccino?");
+
+        System.out.println("Atendente – R$10,00 medio \n");
+
+        System.out.println(a+ "me ve um porfavor!");
+
+        System.out.println(a+ "Pati já tem alguma ideia de onde vamos começar para desenvolver a pagina inical no site que no caso seria o login e senha.");
+
+        System.out.println("Patricia – sim, mas quero saber qual é sua ideai de começo, vamos juntar para ver se bate.");
+
+        System.out.println(a+ "ta, para poder fazer essa pagina de entrada vamos usar..");
+
+        System.out.println("ALTERNATIVAS: ");
+        System.out.println("A – Strings, scanner, boolean, do if, while, equalsignorecase \n" +
+                "Public static void main(string [] args) {\n" +
+                "String user = “patricia”;\n" +
+                "String password = “1233”;\n" +
+                "String login, senha;\n" +
+                "Scanner ler= new Scanner(system.in);\n" +
+                "Boolean tacerto = false;\n" +
+                "Do {\n" +
+                "System.out.println(“Login: ”);\n" +
+                "Login = ler.next();\n" +
+                "System.out.println(“Senha: );\n" +
+                "Senha = ler.next();\n" +
+                "If (login.equalsIgnorecase(user0&& senha.equals(password))\n" +
+                "Tacerto= true;\n" +
+                "}while (tacerto);\n" +
+                "System.outprintln(“login e senha corretos!”)\n");
+
+
+        System.out.println("B- " +
+                "String, do/while, equalsignorecase.\n" +
+                "Public static void main(string [] args) {\n" +
+                "String user = “patricia”;\n" +
+                "String password = “1233”;\n" +
+                "String login, senha;\n" +
+                "Scanner ler= new Scanner(system.in);\n" +
+                "Do {\n" +
+                "System.out.println(“Login: ”);\n" +
+                "Login = ler.next();\n" +
+                "System.out.println(“Senha: );\n" +
+                "Senha = ler.next();\n" +
+                "}while (!(login.equalsIgnorecase(user0&& senha.equals(password)))\n" +
+                "\n" +
+                "System.outprintln(“login e senha corretos!”)\n" +
+                "}}\n");
+
+        System.out.println("C- C -Do-while, scanner, strings\n");
+
+
+        respostaF2 = entradaString();
+
+        if (respostaF2.equals("a") || respostaF2.equals("A")){
+            contadorR++;
+
+        }
+
+        System.out.println("Patrícia – “ usar (resposta escolhida) uma ótima ideia”\n");
+
+
+        System.out.println("Patrícia – “ a minha ideia foi a mesma, também não é tao complicado de fazer”\n");
+
+        System.out.println("Patrícia – “ bom base nisso, vou passar para nossa supervisora, para sabermos se esses dois projetos foram aprovados ");
+
+        System.out.println("\n" +
+                "KAKA –  vamos falar em particular ? por favor.\n");
+
+        System.out.println(a+ "ok, mas sobre oq seria?\n");
+
+       if (contadorR > 1){
+           faseTres(a);
+       }else {
+           System.out.println("VOCE NAO FOI PROMOVIDO");
+       }
+   double reputaçãoP = (contadorR*100) / 7;
+
+        if (reputaçãoP >= 60.0){
+            faseTres();
+            faseTres(a);
+        } else {
+            System.out.println("infelizmente seu projeto foi reprovado.");
+        }
+
+
+
+        return reputaçãoP;
+
+
+
+    }

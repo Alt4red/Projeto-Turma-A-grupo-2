@@ -966,6 +966,7 @@ public class Main {
         System.out.printf("A Kaka é a minha secretária e uma das pessoas em quem eu mais confio aqui na empresa, ela ira continuar\nte orientando e ajudando sempre que necessário, porém agora ela também será a sua secretaria particular\ne te acompanhará em tudo o que for necessário. Vamos entrar.\n");
         count();
         System.out.printf("\n*Vocês entram na sala e de cara vc é recepcionado(a) pela vista maravilhosa da cidade já que a parede lateral da sala é feita inteiramente\nde vidro do chão ao teto, a sala é composta por diferentes tons de cinza e branco, a sua frente há uma enorme mesa de vidro e ao seu lado\ndireito um sofá branco com uma mesa de centro, há também uma porta na parede direita da sala e uma mesa retangular atrás do sofá,\nprovavelmente uma mesa para reuniões, vcs caminhão mais para dentro da sala e vc avista um frigobar no canto direito da sala perto do\nsofá onde há também um balcão com uma maquina de café e alguns utensílios, a sala é enorme e ocupa praticamente todo o andar.*\n");
+<<<<<<< HEAD:src/Main.java
 
         System.out.printf("\nCEO Fabio Akita: Agora é com você %s, vou deixar você ir se acostumando com a sala e com sua nova função.\n", a);
         count();
@@ -1123,6 +1124,165 @@ public class Main {
             System.out.printf("Sinto muito, você errou e terá que começar novamente!\n Game Over!");
         }
 
+=======
+        
+                System.out.printf("\nCEO Fabio Akita: Agora é com você %s, vou deixar você ir se acostumando com a sala e com sua nova função.\n", a);
+    count();
+
+    System.out.printf("\n*Alguns minutos depois.*\n");
+    System.out.printf("\nKaka: %s aqui esta você. Sua agenda para essa tarde está cheia, você tem duas reuniões importantes e uma tarefa pra completar, falta menos de 10m para a sua primeira reunião, vc está pronta?\n", a);
+
+    // 3 loop de resposta para o caso do jogador responder com uma opção inválida.
+    do{
+        
+        System.out.printf("\n*Escolha uma das respostas*");
+        System.out.printf("\n1.	Sim.\n");
+        System.out.printf("\n2.	Não.\n");
+        int r3 = entrada();
+        
+        switch(r3){
+            case 1:
+                System.out.printf("Kaka: Bom, a sala de reunião já está pronta vamos indo.\n");
+                count();
+                x++;
+            break;
+            case 2:
+                System.out.printf("Kaka: Então se prepare porque a sala já está pronta e alguns acionistas já começaram a chegar.\n");
+                count();
+                x++;
+            break;
+            default:
+                x=0;
+                System.out.printf("Opção inválida.*\n");
+        }
+
+    }while(x <= 0);
+
+    System.out.printf("*Vocês foram para a sala de reuniões e a caminho de lá você foi informado que na ultima reunião havia sido pedido um novo projeto principal\nque fosse desenvolvido utilizando a Administração Clássica como base,  chegando na sala foi encaminhado para o acento da cabeceira da mesa cumprimentou os\nque se encontravam na sala e esperou pelos próximos, assim que eles chegaram você se apresentou para eles e em seguida um deles\ncomeçou a apresentar o novo projeto para ser decidido qual seria a nova campanha principal da empresa, todos assistiram atentamente\nas apresentações e no final de tudo todos se voltaram para você esperando a sua decisão.*\n");
+    
+
+    do{
+        contadorR++;
+        System.out.printf("\n*Escolha entre o 1 e o 2 projeto, o que usa como base de criação a Administração clássica.*\n");
+        System.out.printf("\n*Projeto A- A primeira proposta apresentada foi um novo sistema de acesso que armazena e abre arquivos com subniveis de acesso de acordo com\na sua posição, então quanto mais alto o cargo mais amplo o seu acesso aos arquivos do programa e o nível\nmais baixo teria acesso somente aos seus próprios arquivos importados. Esse projeto seria um projeto eficiente e produzido com\no foco na qualidade do produto com metas a serem cumpridas que quando alcançadas por seus respectivos funcionários esses ganhariam recompensas e incentivos*\n");
+
+        System.out.printf("\n*Projeto B - A segunda proposta apresentada foi um novo sistema para armazenar dados de cadastros de clientes uma vez que o cliente fosse a loja e fizesse o\ncadastro seus dados ficariam guardados e seriam puxados somente com o RG ou algum dado pessoal fornecido pelo cliente o grande diferencial\ndesse sistema seria que o cliente teria acesso a um app da loja para poder estar atualizando os seus dados cadastrais sempre que necessário.\nEsse projeto seria um projeto eficaz produzido com o foco na quantidade do produto e de sua entrega com prazo para ser\ncumprido em cada etapa de desenvolvimento, foi um projeto desenvolvido com o tempo de serviço calculado e estimado para cada trabalhador.*\n");
+        count();
+
+        System.out.printf("\n1 - Projeto A\n2 - Projeto B.\n");
+        int r4 = entrada();
+
+        switch(r4){
+            case 1:
+                reputação++;
+                x++;
+            break;
+            case 2:
+                reputação = 0;
+                x++;
+            break;
+            default:
+                x=0;
+                System.out.printf("Opção inválida.*\n");
+        }
+
+    }while(x <= 0);
+
+    System.out.printf("\n*Ao termino da reunião você se manteve no seu lugar porque você ainda participaria de mais uma reunião em menos de 15m.*\n");
+    System.out.printf("\n*O cliente chegou na sala de reunião e você se levantou e o cumprimento em seguidas vocês se sentaram, trocaram\nalgumas trivialidades e começaram  falar de negócios, ele te passou o que precisava para a sua empresa*\n");
+    System.out.printf("\nCliente: Preciso de um sistema de segurança para todos os meus projetos. Vou precisar de um sistema de login com senha encriptada para todos os sistemas que usamos na\nminha empresa e por serem sistemas próprios quero que o sistema de login seja criado com base no nosso sistema e por isso pode acabar sendo um pouco\nmais complicado, mas estou disposto a pagar o necessário, porém preciso do projeto o quanto antes, coloque os melhores que você\ntiver para trabalhar nesse projeto e me entregue assim que possível, sei que vocês não iram me decepcionar.\n");
+    count();
+    
+    do{
+        contadorR++;
+        System.out.printf("\n*Escolha a melhor maneira de prosseguir com o projeto do seu cliente de acordo com o que ele pediu.*\n");
+        System.out.printf("\n*Opção A - Colocar a equipe para trabalhar com prazos definidos para o processo de criação e desenvolvimento,\nbuscando assim um trabalho mais eficiente e com resultados mais rápidos o possível.* \n");
+
+        System.out.printf("\n*Opção B - Colocar a equipe para trabalhar sem determinar os prazos e duração de trabalho em cada etapa,\nbuscando um trabalho mais eficaz com recompensas pelo trabalho feito e pelo esforço da equipe.*\n");
+        count();
+        System.out.printf("\n1 - Opção A.\n2 - Opção B.\n");
+        int r5 = entrada();
+
+        if(r5 == 1){
+            x++;
+            reputação++;
+        } else if (r5 == 2){
+            x++;
+            reputação = reputação;
+        } else{
+            System.out.printf("\nOpção Inválida.\n");
+            x = 0;
+        }
+
+    } while(x <= 0);
+
+    System.out.printf("\n*Assim que você saiu da sala de reunião você se encaminhou para a sua sala já exausto(a) e\no dia mau havia começado, antes de almoçar você ainda tinha um assunto para resolver e\nassim que chegou na sua sala você encontrou o CEO Fabio Akita a sua espera.*\n");
+    System.out.printf("\nCEO Fabio Akita: Soube que suas duas primeira reuniões foram um sucesso, agora falta muito pouco para\nvocê assumir o meu lugar por completo e para que isso aconteça eu só preciso que você me responda mais\numa pergunta, e essa pergunta irá determinar se você é a pessoa certa para ocupar o cargo de CEO dessa empresa.\n");
+    System.out.printf("\nCEO Fabio Akita: Analisando a estrutura da empresa e por já ter passado por vários cargos diferentes e\nter lidado com distintos tipos de situações aqui dentro acredito que você saberá me responder.\n");
+    count();
+
+    System.out.printf("\n*Escolha a alternativa correta para a pergunta feita pelo CEO Fabio Akita, você tem apenas uma tentativa.*\n");
+    System.out.printf("\n*As teorias da administração desenvolvidas por estudiosos americanos tiveram um papel decisivo na economia\nmundial, estabelecendo métodos mais sofisticados para a produção e extinguindo práticas rudimentares baseadas\nem meras tradições, além é claro de automatizar as empresas e os seus processos tornando-as cada vez mais\nqualificadas e preparadas para proporcionar um ótimo ambiente de trabalho para os seus funcionários visando assim\na longo prazo um bom desempenho profissional.*\n");
+
+    do{
+        contadorR++;
+
+        System.out.printf("\nCEO Fabio Akita: Qual método de Administração usamos atualmente na empresa e porque?\n");
+        count();
+
+        System.out.printf("\nI. Administração clássica - que se caracteriza pela ênfase na estrutura da organização, na busca pela eficiência\nhá análise das tarefas de cada indivíduo cedeu lugar a uma visão global e universal da organização, a\nqual partia da estruturação, organização como um todo e chegava, finalmente, ao indivíduo.");
+        System.out.printf("\nII. A teoria da burocracia - Incentivava a impessoalidade nas relações e a padronização dos procedimentos.");
+        System.out.printf("\nIII. Administração cientifica - A teoria da administração científica previa um modelo administrativo com aspectos\nmais orgânicos, valorizando e incentivando a autonomia decisória de cada colaborador com o\nobjetivo de aumentar a produção dentro das organizações e aprimorar a eficiência dos trabalhadores.");
+        System.out.printf("\nIV. A teoria comportamental - Baseava seus métodos no estudo de tempos e movimentos de cada atividade.\n");
+
+        System.out.printf("\n*Está correto o que se afirma em:*\n");
+
+        System.out.printf("1 - I, Apenas.\n");
+        System.out.printf("2 - Todas.\n");
+        System.out.printf("3 - IV, Apenas.\n");
+        System.out.printf("4 - I e III, Apenas.\n");
+        int r6 = entrada();
+
+        //Vou guardar as respostas em um array
+        int [] vetor = new int [4];
+        vetor [0]= 1;
+        vetor [1]= 2;
+        vetor [2]= 3;
+        vetor [3]= 4;
+
+        if ((r6 != 1) & (r6 != 2) & (r6 != 3) & (r6 != 4)){
+            System.out.printf("Opção Inválida!");
+            x=0;
+        }
+
+        for (int i =0; i<vetor.length; i++){
+            if(vetor[i] == r6){
+                if(r6 == 1){
+                    reputação = reputação;
+                }
+                if(r6 == 2){
+                    reputação = reputação;
+                }
+                if(r6 == 3){
+                    reputação = reputação;
+                }
+                if(r6 == 4){
+                    reputação++;
+                }
+            }   
+        }
+
+    }while(x <= 0);
+
+    double resultado = (reputação*100)/(double) contadorR;
+    if (resultado == 100){
+        System.out.printf("\nCEO Fabio Akita: Parabéns %s! Você acertou a pergunta e por isso agora você se tronou oficialmente o novo CEO da CODMINE!\nFim de jogo!", a);
+    }
+    else {
+        System.out.printf("Sinto muito, você errou e terá que começar novamente!\n Game Over!");
+    }
+        
+>>>>>>> 30aee2c048f203d3f44255725081f6fc67519bfe:origem/Main.java
     }
     public static void menu() {
 
