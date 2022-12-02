@@ -1026,7 +1026,7 @@ public class Main {
         System.out.printf("4 - I e III, Apenas.\n");
         int r6 = entrada();
 
-        //Vou quardar as respostas em um array
+        //Vou guardar as respostas em um array
         int [] vetor = new int [4];
         vetor [0]= 1;
         vetor [1]= 2;
